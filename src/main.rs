@@ -16,7 +16,7 @@ use std::fmt::Debug;
 /// Hints: .iter(), .sum()
 /// Statements needed: 1
 fn sum_of_list(numbers: &[i32]) -> i32 {
-    todo!()
+    numbers.iter().sum()
 }
 
 /// Problem 2 (Easy): Filter Even Numbers
@@ -29,7 +29,7 @@ fn sum_of_list(numbers: &[i32]) -> i32 {
 ///
 /// Statements needed: 1
 fn filter_even(numbers: &[i32]) -> Vec<i32> {
-    todo!()
+    numbers.iter().filter(|&&n| n % 2==0).copied().collect()
 }
 
 /// Problem 3 (Easy): Uppercase All Words
